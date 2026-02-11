@@ -116,32 +116,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         pollForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const selected = pollForm.querySelector('input[name="poll"]:checked');
+            const selected = pollForm.querySelector('input[name="reponse"]:checked');
             if (!selected) {
+                e.preventDefault();
                 alert('Veuillez sélectionner une option');
                 return;
             }
             
-            // Show all bars
+            // Show all bars before submit
             pollOptions.forEach(option => {
                 const bar = option.querySelector('.poll-bar');
                 const percentage = getComputedStyle(bar).getPropertyValue('--percentage');
                 bar.style.width = percentage;
             });
             
-            // Disable form
-            pollForm.querySelectorAll('input').forEach(input => input.disabled = true);
-            pollForm.querySelector('button').textContent = 'Merci pour votre vote !';
-            pollForm.querySelector('button').disabled = true;
-            
-            // Update participant count
-            const participantEl = document.querySelector('.poll-participants');
-            if (participantEl) {
-                const currentCount = parseInt(participantEl.textContent.match(/\d+/)[0]);
-                participantEl.innerHTML = `<i class="fas fa-users"></i> ${currentCount + 1} participants`;
-            }
+            // Change button text
+            pollForm.querySelector('button').textContent = 'Envoi en cours...';
         });
     }
     

@@ -150,7 +150,13 @@ img {
     width: 100%;
 }
 
-.nav-social .instagram-link {
+.nav-social {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-social .instagram-link,
+.nav-social .linkedin-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +171,11 @@ img {
 
 .nav-social .instagram-link:hover {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transform: scale(1.1);
+}
+
+.nav-social .linkedin-link:hover {
+    background: #0077b5;
     transform: scale(1.1);
 }
 
@@ -1270,6 +1281,10 @@ img {
     transform: translateY(-3px);
 }
 
+.social-link:nth-child(2):hover {
+    background: #0077b5;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
@@ -1279,6 +1294,106 @@ img {
 .footer-bottom p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
+}
+
+/* =============================================
+   Nous connaître / Équipe Section
+   ============================================= */
+.equipe {
+    padding: 100px 0;
+    background: var(--bg-color);
+}
+
+.fondateur-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fondateur-image {
+    position: relative;
+}
+
+.fondateur-image img {
+    width: 100%;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 4px solid var(--gold);
+}
+
+.fondateur-image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid var(--primary-color);
+    border-radius: var(--border-radius-lg);
+    z-index: -1;
+}
+
+.fondateur-info h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.fondateur-role {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--primary-dark);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.fondateur-quote {
+    position: relative;
+    padding: 25px 30px;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--gold);
+}
+
+.fondateur-quote i {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+    color: var(--gold);
+    opacity: 0.5;
+}
+
+.fondateur-quote p {
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0;
+    padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+    .fondateur-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .fondateur-image {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .fondateur-image::before {
+        display: none;
+    }
 }
 
 /* =============================================
