@@ -6,7 +6,7 @@
     
     <!-- Page principale -->
     <url>
-        <loc>https://ifa-insa.fr/</loc>
+        <loc>https://popomillion.github.io/ifa-insa/</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
     
     <!-- Section Accueil -->
     <url>
-        <loc>https://ifa-insa.fr/#accueil</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#accueil</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -22,7 +22,7 @@
     
     <!-- Section Qui sommes-nous -->
     <url>
-        <loc>https://ifa-insa.fr/#equipe</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#equipe</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -30,7 +30,7 @@
     
     <!-- Section Événements -->
     <url>
-        <loc>https://ifa-insa.fr/#evenements</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#evenements</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -38,7 +38,7 @@
     
     <!-- Section Adhésion -->
     <url>
-        <loc>https://ifa-insa.fr/#adhesion</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#adhesion</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -46,7 +46,7 @@
     
     <!-- Section Actualités -->
     <url>
-        <loc>https://ifa-insa.fr/#actualites</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#actualites</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
@@ -54,7 +54,7 @@
     
     <!-- Section Sondages -->
     <url>
-        <loc>https://ifa-insa.fr/#sondages</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#sondages</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
@@ -62,7 +62,7 @@
     
     <!-- Section Contact -->
     <url>
-        <loc>https://ifa-insa.fr/#contact</loc>
+        <loc>https://popomillion.github.io/ifa-insa/#contact</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
