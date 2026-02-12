@@ -1,0 +1,21 @@
+# Robots.txt pour IFA - INSA Finance Association
+# https://ifa-insa.fr
+
+# Autoriser tous les robots à indexer le site
+User-agent: *
+Allow: /
+
+# Autoriser spécifiquement Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Autoriser Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://ifa-insa.fr/sitemap.xml
+
+# Fichiers à ne pas indexer (si nécessaire)
+# Disallow: /private/
+# Disallow: /admin/

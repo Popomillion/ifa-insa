@@ -339,3 +339,128 @@ function throttle(func, limit) {
         }
     };
 }
+
+// =========================================
+// Bureau Members Carousel
+// =========================================
+
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('bureauCarousel');
+    if (!carousel) return;
+    
+    const members = carousel.querySelectorAll('.bureau-member');
+    const indicators = document.querySelectorAll('.carousel-indicators .indicator');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    let currentIndex = 0;
+    let autoSlideInterval;
+    const autoSlideDelay = 3000; // 3 seconds
+    
+    // Function to show a specific member
+    function showMember(index) {
+        // Handle wrapping
+        if (index < 0) index = members.length - 1;
+        if (index >= members.length) index = 0;
+        
+        // Update current index
+        currentIndex = index;
+        
+        // Hide all members
+        members.forEach(member => {
+            member.classList.remove('active');
+        });
+        
+        // Show the target member
+        members[currentIndex].classList.add('active');
+        
+        // Update indicators
+        indicators.forEach((indicator, i) => {
+            indicator.classList.toggle('active', i === currentIndex);
+        });
+    }
+    
+    // Function to go to next member
+    function nextMember() {
+        showMember(currentIndex + 1);
+    }
+    
+    // Function to go to previous member
+    function prevMember() {
+        showMember(currentIndex - 1);
+    }
+    
+    // Start auto-slide
+    function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideInterval = setInterval(nextMember, autoSlideDelay);
+    }
+    
+    // Stop auto-slide
+    function stopAutoSlide() {
+        if (autoSlideInterval) {
+            clearInterval(autoSlideInterval);
+        }
+    }
+    
+    // Event listeners for navigation buttons
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            prevMember();
+            startAutoSlide(); // Reset timer on manual navigation
+        });
+    }
+    
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            nextMember();
+            startAutoSlide(); // Reset timer on manual navigation
+        });
+    }
+    
+    // Event listeners for indicators
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', function() {
+            showMember(index);
+            startAutoSlide(); // Reset timer on manual navigation
+        });
+    });
+    
+    // Touch/Swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoSlide();
+    }, { passive: true });
+    
+    carousel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoSlide();
+    }, { passive: true });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - go to next
+                nextMember();
+            } else {
+                // Swipe right - go to previous
+                prevMember();
+            }
+        }
+    }
+    
+    // Pause auto-slide on hover
+    carousel.addEventListener('mouseenter', stopAutoSlide);
+    carousel.addEventListener('mouseleave', startAutoSlide);
+    
+    // Initialize carousel
+    showMember(0);
+    startAutoSlide();
+});

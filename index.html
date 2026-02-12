@@ -3,7 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.F.A. - INSA Finance Association</title>
+    
+    <!-- SEO Meta Tags Optimisés -->
+    <title>IFA - INSA Finance Association | Association Finance INSA Lyon</title>
+    <meta name="description" content="IFA - INSA Finance Association est l'association de finance de l'INSA Lyon. Découvrez nos conférences, événements, actualités financières et rejoignez notre communauté d'étudiants passionnés par la finance, l'économie et les marchés financiers.">
+    <meta name="keywords" content="IFA, INSA Finance, INSA Finance Association, INSA Lyon, association finance, finance étudiants, INSA, école ingénieur finance, club finance Lyon, économie INSA, marchés financiers, bourse étudiants, conférences finance Lyon, association étudiante INSA">
+    <meta name="author" content="INSA Finance Association">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="24M3vdBcrRieuYsALV0M0gnGNlXJvmDV6JfWfNDHB3I" />
+    
+    <link rel="canonical" href="https://ifa-insa.fr/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ifa-insa.fr/">
+    <meta property="og:title" content="IFA - INSA Finance Association | Association Finance INSA Lyon">
+    <meta property="og:description" content="L'association de finance de l'INSA Lyon. Conférences, événements, actualités financières pour les étudiants passionnés par la finance et l'économie.">
+    <meta property="og:image" content="https://ifa-insa.fr/assets/logo.jpeg">
+    <meta property="og:image:alt" content="Logo IFA INSA Finance Association">
+    <meta property="og:site_name" content="INSA Finance Association">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://ifa-insa.fr/">
+    <meta name="twitter:title" content="IFA - INSA Finance Association | Association Finance INSA Lyon">
+    <meta name="twitter:description" content="L'association de finance de l'INSA Lyon. Conférences, événements, actualités financières pour les étudiants.">
+    <meta name="twitter:image" content="https://ifa-insa.fr/assets/logo.jpeg">
+    
+    <!-- Geo Tags pour référencement local -->
+    <meta name="geo.region" content="FR-69">
+    <meta name="geo.placename" content="Villeurbanne, Lyon">
+    <meta name="geo.position" content="45.7833;4.8833">
+    <meta name="ICBM" content="45.7833, 4.8833">
+    
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "INSA Finance Association",
+        "alternateName": ["IFA", "IFA INSA", "INSA Finance", "INSA Finance Lyon"],
+        "url": "https://ifa-insa.fr",
+        "logo": "https://ifa-insa.fr/assets/logo.jpeg",
+        "description": "Association de finance de l'INSA Lyon dédiée à sensibiliser les étudiants-ingénieurs aux multiples facettes de la finance, de l'économie et des marchés financiers.",
+        "foundingDate": "2025",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "20 Avenue Albert Einstein",
+            "addressLocality": "Villeurbanne",
+            "postalCode": "69100",
+            "addressCountry": "FR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@ifa-insa.fr",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.instagram.com/insa.finance.asso",
+            "https://www.linkedin.com/company/insa-finance-association"
+        ],
+        "memberOf": {
+            "@type": "EducationalOrganization",
+            "name": "INSA Lyon",
+            "url": "https://www.insa-lyon.fr"
+        },
+        "keywords": "IFA, INSA Finance, INSA Finance Association, association finance étudiants, INSA Lyon, finance, économie, marchés financiers"
+    }
+    </script>
+    
+    <!-- Schema.org pour Organisation Éducative -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollegeOrUniversity",
+        "name": "INSA Lyon",
+        "department": {
+            "@type": "Organization",
+            "name": "INSA Finance Association (IFA)",
+            "description": "Association étudiante de finance à l'INSA Lyon"
+        }
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+    <link rel="apple-touch-icon" href="assets/logo.jpeg">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,28 +102,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- TradingView Ticker Widget -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+                {"proName": "EURONEXT:PX1", "title": "CAC 40"},
+                {"proName": "FOREXCOM:SPXUSD", "title": "S&P 500"},
+                {"proName": "NASDAQ:NDX", "title": "NASDAQ"},
+                {"proName": "XETR:DAX", "title": "DAX"},
+                {"proName": "FTSE:UKX", "title": "FTSE 100"},
+                {"proName": "TVC:NI225", "title": "NIKKEI 225"},
+                {"proName": "TVC:GOLD", "title": "Gold"},
+                {"proName": "BITSTAMP:BTCUSD", "title": "Bitcoin"},
+                {"proName": "TVC:DJI", "title": "Dow Jones"},
+                {"proName": "TVC:VIX", "title": "VIX"},
+                {"proName": "EURONEXT:SXXP", "title": "STOXX 600"}
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "fr"
+        }
+        </script>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#accueil" class="logo">
-                <img src="assets/logo.jpeg" alt="IFA Logo" class="logo-img">
+            <a href="#accueil" class="logo" title="IFA - INSA Finance Association - Accueil">
+                <img src="assets/logo.jpeg" alt="Logo IFA INSA Finance Association Lyon" class="logo-img">
                 <span class="logo-text">I.F.A.</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#programme">Programme</a></li>
-                <li><a href="#actualites">Actualités</a></li>
-                <li><a href="#videos">Vidéos</a></li>
-                <li><a href="#sondages">Sondages</a></li>
+                <li><a href="#equipe">Qui sommes-nous</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#evenements">Évènements</a></li>
                 <li><a href="#adhesion">Adhérer</a></li>
-                <li><a href="#equipe">Nous connaître</a></li>
+                <li><a href="#sondages">Sondages</a></li>
+                <li><a href="#actualites">Actus</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-social">
-                <a href="https://www.instagram.com/insa.finance.asso?igsh=cHZ6cHI5bWo3a3Jp" target="_blank" class="instagram-link">
+                <a href="https://www.instagram.com/insa.finance.asso?igsh=cHZ6cHI5bWo3a3Jp" target="_blank" class="instagram-link" rel="noopener" title="Suivez IFA INSA Finance sur Instagram" aria-label="Instagram IFA INSA Finance">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/company/insa-finance-association" target="_blank" class="linkedin-link">
+                <a href="https://www.linkedin.com/company/insa-finance-association" target="_blank" class="linkedin-link" rel="noopener" title="Suivez IFA INSA Finance sur LinkedIn" aria-label="LinkedIn IFA INSA Finance">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </div>
@@ -45,30 +163,100 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="accueil" class="hero">
+    <section id="accueil" class="hero" role="banner">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">INSA Finance Association</h1>
-            <p class="hero-subtitle">Sensibiliser les étudiants aux multiples facettes de la finance</p>
+            <h1 class="hero-title">IFA - INSA Finance Association Lyon</h1>
+            <p class="hero-subtitle">L'association finance de l'INSA Lyon - Sensibiliser les étudiants aux multiples facettes de la finance</p>
             <div class="hero-buttons">
                 <a href="#adhesion" class="btn btn-primary">Rejoindre l'IFA</a>
-                <a href="#programme" class="btn btn-secondary">Découvrir le programme</a>
+                <a href="#evenements" class="btn btn-secondary">Découvrir les évènements</a>
             </div>
         </div>
         <div class="hero-scroll">
-            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+            <a href="#equipe" aria-label="Défiler vers la section Qui sommes-nous"><i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Qui sommes-nous / Équipe Section -->
+    <section id="equipe" class="equipe" aria-labelledby="equipe-title">
         <div class="container">
             <div class="section-header">
-                <h2>À propos de l'IFA</h2>
+                <h2 id="equipe-title">Qui sommes-nous - L'équipe IFA INSA Finance</h2>
                 <div class="underline"></div>
+                <p class="section-subtitle">L'équipe derrière l'IFA</p>
             </div>
-            <div class="about-content">
+            
+            <!-- Bureau Members Carousel -->
+            <div class="bureau-carousel-container">
+                <div class="bureau-carousel" id="bureauCarousel">
+                    <div class="bureau-member active">
+                        <div class="member-image">
+                            <img src="./assets/fondateur.jpeg" alt="Nicolas Pingret-Delrue - Fondateur IFA INSA Finance Association Lyon">
+                        </div>
+                        <div class="member-info">
+                            <h3>Nicolas Pingret-Delrue</h3>
+                            <span class="member-role">Fondateur</span>
+                            <blockquote class="member-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>« J'ai créé l'association IFA pour développer une culture économico-financière chez les étudiants-ingénieurs de l'INSA Lyon »</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="bureau-member">
+                        <div class="member-image">
+                            <img src="./assets/vice-president.jpeg" alt="Vice-Président">
+                        </div>
+                        <div class="member-info">
+                            <h3>Vice-Président</h3>
+                            <span class="member-role">Vice-Président</span>
+                            <blockquote class="member-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>« Accompagner le développement de l'IFA et soutenir nos membres dans leur découverte du monde financier »</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="bureau-member">
+                        <div class="member-image">
+                            <img src="./assets/tresorier.jpeg" alt="Trésorier">
+                        </div>
+                        <div class="member-info">
+                            <h3>Trésorier</h3>
+                            <span class="member-role">Trésorier</span>
+                            <blockquote class="member-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>« Gérer les finances de l'association avec rigueur pour permettre la réalisation de tous nos projets »</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="bureau-member">
+                        <div class="member-image">
+                            <img src="./assets/secretaire.jpeg" alt="Secrétaire Générale">
+                        </div>
+                        <div class="member-info">
+                            <h3>Secrétaire Générale</h3>
+                            <span class="member-role">Secrétaire Générale</span>
+                            <blockquote class="member-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>« Assurer la coordination et la communication au sein du bureau pour une organisation optimale »</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                </div>
+                <button class="carousel-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- About IFA -->
+            <div class="about-content" style="margin-top: 80px;">
                 <div class="about-text">
+                    <h3 style="color: var(--primary-color); font-size: 1.8rem; margin-bottom: 20px;">À propos de l'IFA</h3>
                     <p>L'<strong>INSA Finance Association</strong> a pour mission de sensibiliser les étudiants aux multiples facettes de la finance. À travers nos événements, publications et ressources pédagogiques, nous créons un espace d'apprentissage et d'échange autour des thématiques financières et économiques.</p>
                     <p>Notre association propose :</p>
                     <ul class="features-list">
@@ -91,13 +279,37 @@
         </div>
     </section>
 
-    <!-- Programme Section -->
-    <section id="programme" class="programme">
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2><i class="fas fa-envelope-open-text"></i> Newsletter IFA</h2>
+                    <p>Restez informé des dernières actualités financières, des événements à venir et des opportunités exclusives !</p>
+                </div>
+                <form class="newsletter-form" action="https://formsubmit.co/pablogarin2025@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="📧 Nouvelle inscription newsletter IFA">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="#newsletter">
+                    <input type="hidden" name="formulaire" value="Newsletter">
+                    <div class="form-group">
+                        <input type="text" name="prenom" placeholder="Prénom" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Évènements Section (anciennement Programme) -->
+    <section id="evenements" class="programme" aria-labelledby="evenements-title">
         <div class="container">
             <div class="section-header">
-                <h2>Programme 2025-2026</h2>
+                <h2 id="evenements-title">Évènements IFA INSA Finance 2025-2026</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Découvrez nos événements à venir</p>
+                <p class="section-subtitle">Découvrez les conférences et événements finance à l'INSA Lyon</p>
             </div>
             <div class="timeline">
                 <div class="timeline-item">
@@ -183,182 +395,13 @@
         </div>
     </section>
 
-    <!-- Actualités Section -->
-    <section id="actualites" class="actualites">
-        <div class="container">
-            <div class="section-header">
-                <h2>Actualités</h2>
-                <div class="underline"></div>
-                <p class="section-subtitle">Publications économiques et financières</p>
-            </div>
-            <div class="articles-grid">
-                <article class="article-card featured">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800" alt="Marchés financiers">
-                        <span class="article-category">Marchés</span>
-                    </div>
-                    <div class="article-content">
-                        <span class="article-date"><i class="far fa-calendar"></i> 10 Février 2026</span>
-                        <h3>Analyse des marchés : perspectives 2026</h3>
-                        <p>Un tour d'horizon des tendances macroéconomiques et des opportunités d'investissement pour cette nouvelle année...</p>
-                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800" alt="Cryptomonnaies">
-                        <span class="article-category">Crypto</span>
-                    </div>
-                    <div class="article-content">
-                        <span class="article-date"><i class="far fa-calendar"></i> 5 Février 2026</span>
-                        <h3>Bitcoin : où en sommes-nous ?</h3>
-                        <p>Le point sur l'évolution des cryptomonnaies et leur place dans le paysage financier actuel...</p>
-                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-                <article class="article-card">
-                    <div class="article-image">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="Finance durable">
-                        <span class="article-category">ESG</span>
-                    </div>
-                    <div class="article-content">
-                        <span class="article-date"><i class="far fa-calendar"></i> 1 Février 2026</span>
-                        <h3>La finance durable en plein essor</h3>
-                        <p>Comment les critères ESG transforment le monde de l'investissement et les stratégies des gestionnaires...</p>
-                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vidéos Section -->
-    <section id="videos" class="videos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vidéos Explicatives</h2>
-                <div class="underline"></div>
-                <p class="section-subtitle">Apprenez la finance en vidéo</p>
-            </div>
-            <div class="videos-grid">
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600" alt="Bourse">
-                        <div class="play-button"><i class="fas fa-play"></i></div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Introduction à la Bourse</h3>
-                        <p>Comprendre les fondamentaux du marché boursier</p>
-                        <span class="video-duration"><i class="far fa-clock"></i> 12 min</span>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Analyse financière">
-                        <div class="play-button"><i class="fas fa-play"></i></div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Lire un bilan comptable</h3>
-                        <p>Les bases de l'analyse financière</p>
-                        <span class="video-duration"><i class="far fa-clock"></i> 18 min</span>
-                    </div>
-                </div>
-                <div class="video-card">
-                    <div class="video-thumbnail">
-                        <img src="https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=600" alt="Crypto">
-                        <div class="play-button"><i class="fas fa-play"></i></div>
-                    </div>
-                    <div class="video-info">
-                        <h3>Blockchain expliquée</h3>
-                        <p>Comment fonctionne cette technologie révolutionnaire</p>
-                        <span class="video-duration"><i class="far fa-clock"></i> 15 min</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sondages Section -->
-    <section id="sondages" class="sondages">
-        <div class="container">
-            <div class="section-header">
-                <h2>Sondages</h2>
-                <div class="underline"></div>
-                <p class="section-subtitle">Donnez votre avis !</p>
-            </div>
-            <div class="poll-container">
-                <div class="poll-card active-poll">
-                    <div class="poll-header">
-                        <span class="poll-status">En cours</span>
-                        <span class="poll-ends">Fin : 20 Février 2026</span>
-                    </div>
-                    <h3>Quel sujet vous intéresse le plus pour notre prochaine conférence ?</h3>
-                    <form class="poll-form" id="poll-form" action="https://formsubmit.co/pablogarin2025@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="📊 Nouveau vote sondage IFA">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="#sondages">
-                        <input type="hidden" name="formulaire" value="Sondage">
-                        <input type="hidden" name="question" value="Quel sujet vous intéresse le plus pour notre prochaine conférence ?">
-                        <div class="poll-option">
-                            <input type="radio" name="reponse" id="option1" value="Private Equity & Venture Capital" required>
-                            <label for="option1">Private Equity & Venture Capital</label>
-                            <div class="poll-bar" style="--percentage: 35%"></div>
-                        </div>
-                        <div class="poll-option">
-                            <input type="radio" name="reponse" id="option2" value="Trading algorithmique">
-                            <label for="option2">Trading algorithmique</label>
-                            <div class="poll-bar" style="--percentage: 25%"></div>
-                        </div>
-                        <div class="poll-option">
-                            <input type="radio" name="reponse" id="option3" value="Finance durable et ESG">
-                            <label for="option3">Finance durable et ESG</label>
-                            <div class="poll-bar" style="--percentage: 28%"></div>
-                        </div>
-                        <div class="poll-option">
-                            <input type="radio" name="reponse" id="option4" value="DeFi et Web3">
-                            <label for="option4">DeFi et Web3</label>
-                            <div class="poll-bar" style="--percentage: 12%"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Voter</button>
-                    </form>
-                    <p class="poll-participants"><i class="fas fa-users"></i> 127 participants</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section id="newsletter" class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-text">
-                    <h2><i class="fas fa-envelope-open-text"></i> Newsletter IFA</h2>
-                    <p>Restez informé des dernières actualités financières, des événements à venir et des opportunités exclusives !</p>
-                </div>
-                <form class="newsletter-form" action="https://formsubmit.co/pablogarin2025@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="📧 Nouvelle inscription newsletter IFA">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_next" value="#newsletter">
-                    <input type="hidden" name="formulaire" value="Newsletter">
-                    <div class="form-group">
-                        <input type="text" name="prenom" placeholder="Prénom" required>
-                        <input type="email" name="email" placeholder="Votre email" required>
-                        <button type="submit" class="btn btn-primary">S'inscrire</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Adhésion Section -->
-    <section id="adhesion" class="adhesion">
+    <section id="adhesion" class="adhesion" aria-labelledby="adhesion-title">
         <div class="container">
             <div class="section-header">
-                <h2>Rejoindre l'IFA</h2>
+                <h2 id="adhesion-title">Rejoindre l'IFA - Adhésion INSA Finance Association</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Devenez membre de notre association</p>
+                <p class="section-subtitle">Devenez membre de l'association finance de l'INSA Lyon</p>
             </div>
             <div class="membership-types">
                 <div class="membership-card">
@@ -468,37 +511,112 @@
         </div>
     </section>
 
-    <!-- Nous connaître Section -->
-    <section id="equipe" class="equipe">
+    <!-- Sondages Section -->
+    <section id="sondages" class="sondages" aria-labelledby="sondages-title">
         <div class="container">
             <div class="section-header">
-                <h2>Nous connaître</h2>
+                <h2 id="sondages-title">Sondages IFA - Donnez votre avis sur la finance</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">L'équipe derrière l'IFA</p>
+                <p class="section-subtitle">Participez aux sondages de l'INSA Finance Association</p>
             </div>
-            <div class="fondateur-section">
-                <div class="fondateur-image">
-                    <img src="./assets/fondateur.jpeg" alt="Nicolas Pingret-Delrue">
-                </div>
-                <div class="fondateur-info">
-                    <h3>Nicolas Pingret-Delrue</h3>
-                    <span class="fondateur-role">Fondateur de l'IFA</span>
-                    <blockquote class="fondateur-quote">
-                        <i class="fas fa-quote-left"></i>
-                        <p>« J'ai créé l'association IFA pour développer une culture économico-financière chez les étudiants-ingénieurs de l'INSA Lyon »</p>
-                    </blockquote>
+            <div class="poll-container">
+                <div class="poll-card active-poll">
+                    <div class="poll-header">
+                        <span class="poll-status">En cours</span>
+                        <span class="poll-ends">Fin : 20 Février 2026</span>
+                    </div>
+                    <h3>Quel sujet vous intéresse le plus pour notre prochaine conférence ?</h3>
+                    <form class="poll-form" id="poll-form" action="https://formsubmit.co/pablogarin2025@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="📊 Nouveau vote sondage IFA">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="#sondages">
+                        <input type="hidden" name="formulaire" value="Sondage">
+                        <input type="hidden" name="question" value="Quel sujet vous intéresse le plus pour notre prochaine conférence ?">
+                        <div class="poll-option">
+                            <input type="radio" name="reponse" id="option1" value="Private Equity & Venture Capital" required>
+                            <label for="option1">Private Equity & Venture Capital</label>
+                            <div class="poll-bar" style="--percentage: 35%"></div>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" name="reponse" id="option2" value="Trading algorithmique">
+                            <label for="option2">Trading algorithmique</label>
+                            <div class="poll-bar" style="--percentage: 25%"></div>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" name="reponse" id="option3" value="Finance durable et ESG">
+                            <label for="option3">Finance durable et ESG</label>
+                            <div class="poll-bar" style="--percentage: 28%"></div>
+                        </div>
+                        <div class="poll-option">
+                            <input type="radio" name="reponse" id="option4" value="DeFi et Web3">
+                            <label for="option4">DeFi et Web3</label>
+                            <div class="poll-bar" style="--percentage: 12%"></div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Voter</button>
+                    </form>
+                    <p class="poll-participants"><i class="fas fa-users"></i> 127 participants</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <!-- Actualités Section -->
+    <section id="actualites" class="actualites" aria-labelledby="actualites-title">
         <div class="container">
             <div class="section-header">
-                <h2>Contact</h2>
+                <h2 id="actualites-title">Actualités Finance - Publications IFA INSA Lyon</h2>
                 <div class="underline"></div>
-                <p class="section-subtitle">Une question ? Contactez-nous !</p>
+                <p class="section-subtitle">Articles sur l'économie, les marchés financiers et la finance</p>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card featured">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800" alt="Marchés financiers">
+                        <span class="article-category">Marchés</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> 10 Février 2026</span>
+                        <h3>Analyse des marchés : perspectives 2026</h3>
+                        <p>Un tour d'horizon des tendances macroéconomiques et des opportunités d'investissement pour cette nouvelle année...</p>
+                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800" alt="Cryptomonnaies">
+                        <span class="article-category">Crypto</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> 5 Février 2026</span>
+                        <h3>Bitcoin : où en sommes-nous ?</h3>
+                        <p>Le point sur l'évolution des cryptomonnaies et leur place dans le paysage financier actuel...</p>
+                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800" alt="Finance durable">
+                        <span class="article-category">ESG</span>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date"><i class="far fa-calendar"></i> 1 Février 2026</span>
+                        <h3>La finance durable en plein essor</h3>
+                        <p>Comment les critères ESG transforment le monde de l'investissement et les stratégies des gestionnaires...</p>
+                        <a href="#" class="read-more">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="contact-title">Contact IFA - INSA Finance Association Lyon</h2>
+                <div class="underline"></div>
+                <p class="section-subtitle">Contactez l'association finance de l'INSA Lyon</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
@@ -562,47 +680,47 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/logo.jpeg" alt="IFA Logo" class="logo-img">
+                        <img src="assets/logo.jpeg" alt="Logo IFA INSA Finance Association Lyon" class="logo-img">
                         <span>I.F.A.</span>
                     </div>
-                    <p>INSA Finance Association - Sensibiliser les étudiants aux multiples facettes de la finance.</p>
+                    <p>IFA - INSA Finance Association Lyon - L'association de finance de l'INSA Lyon qui sensibilise les étudiants-ingénieurs aux marchés financiers et à l'économie.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Liens rapides</h4>
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#programme">Programme</a></li>
-                        <li><a href="#actualites">Actualités</a></li>
+                        <li><a href="#equipe">Qui sommes-nous</a></li>
+                        <li><a href="#evenements">Évènements</a></li>
                         <li><a href="#adhesion">Adhérer</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Ressources</h4>
                     <ul>
-                        <li><a href="#videos">Vidéos</a></li>
+                        <li><a href="#actualites">Actus</a></li>
                         <li><a href="#sondages">Sondages</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Suivez-nous</h4>
+                    <h4>Suivez IFA sur les réseaux</h4>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/insa.finance.asso?igsh=cHZ6cHI5bWo3a3Jp" target="_blank" class="social-link">
+                        <a href="https://www.instagram.com/insa.finance.asso?igsh=cHZ6cHI5bWo3a3Jp" target="_blank" class="social-link" rel="noopener" title="Instagram IFA INSA Finance" aria-label="Suivez-nous sur Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/insa-finance-association" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/company/insa-finance-association" target="_blank" class="social-link" rel="noopener" title="LinkedIn IFA INSA Finance" aria-label="Suivez-nous sur LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 INSA Finance Association. Tous droits réservés.</p>
+                <p>&copy; 2026 IFA - INSA Finance Association Lyon. Tous droits réservés. | Association finance étudiants INSA</p>
             </div>
         </div>
     </footer>
